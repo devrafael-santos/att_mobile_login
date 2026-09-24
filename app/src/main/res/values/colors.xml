@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="ucsal_navy">#1B2767</color>
+    <color name="ucsal_purple">#691461</color>
+    <color name="ucsal_lightblue">#007CC0</color>
+    <color name="ucsal_background">#F5F6FA</color>
+    <color name="gray">#888888</color>
 </resources>

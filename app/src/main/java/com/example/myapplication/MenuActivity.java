@@ -12,13 +12,17 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        String usuario = getIntent().getStringExtra("usuario");
+        if (usuario != null) {
+            android.widget.Toast.makeText(this, "Bem-vindo, " + usuario + "!", android.widget.Toast.LENGTH_SHORT).show();
+        }
+
         Button btnVoltar = findViewById(R.id.btnVoltar);
 
-        // Ação de clique para fechar esta tela e voltar ao Login
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Encerra a MenuActivity
+                finish();
             }
         });
     }
